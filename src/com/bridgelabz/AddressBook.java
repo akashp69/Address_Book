@@ -2,27 +2,36 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 
-public class AddressBook {
+public class AddressBook extends Contacts {
     Scanner sc = new Scanner(System.in);
 
-    Contacts obj = new Contacts();
+
     public void Contacts() {
         System.out.println("Enter Details for Creating Contacts");
         System.out.println("Enter First Name");
-        obj.setFirstname(sc.next());
+        setFirstname(sc.next());
         System.out.println("Enter last Name");
-        obj.setLastname(sc.next());
+        setLastname(sc.next());
         System.out.println("Enter Address");
-        obj.setAddress(sc.next());
+        setAddress(sc.next());
         System.out.println("Enter State");
-        obj.setState(sc.next());
+        setState(sc.next());
         System.out.println("Enter Zip");
-        obj.setZip(sc.nextInt());
+        setZip(sc.nextInt());
         System.out.println("Enter Phone no");
-        obj.setPhonenumber(sc.nextLong());
+        setPhonenumber(sc.nextLong());
         System.out.println("Enter E-mail");
-        obj.setEmail(sc.next());
+        setEmail(sc.next());
 
+
+        System.out.println("Check Added Contact Details");
+        System.out.println("\n First Name "+getFirstname());
+        System.out.println("\n Last Name "+getLastname());
+        System.out.println("\n Address "+getAddress());
+        System.out.println("\n State "+getState());
+        System.out.println("\n Zip "+getZip());
+        System.out.println("\n Phone Number  "+getPhonenumber());
+        System.out.println("\nE-mail id "+getEmail());
     }
 
 
