@@ -37,10 +37,16 @@ public class AddressBookMain {
 
         Console console = new Console();
         console.showContact(contact);
-        System.out.print("\nDo you want to edit? press 1 for edit  / 2 for not  : ");
+        System.out.print("\nDo you want to edit? press 1 for Edit  / 2 for Not : ");
         char editOption = sc.next().charAt(0);
         if (editOption == '1') {
             console.editContact(contact);
+        }
+        console.showContact(contact);
+        System.out.print("\nDo you want to delete? press 1 For Delet / 2 for Not: ");
+        char deleteOption = sc.next().charAt(0);
+        if (deleteOption == '1') {
+            contact = console.deleteContact(contact);
         }
         console.showContact(contact);
         sc.close();
