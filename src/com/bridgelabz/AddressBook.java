@@ -1,39 +1,47 @@
 package com.bridgelabz;
 
-import java.util.Scanner;
+class AddressBook extends Contact {
+     String address, city, state;
+     int zip;
+     long phoneNo;
 
-public class AddressBook extends Contacts {
-    Scanner sc = new Scanner(System.in);
+     public void setAddress(String address) {
+          this.address = address;
+     }
 
+     public String getAddress() {
+          return address;
+     }
 
-    public void Contacts() {
-        System.out.println("Enter Details for Creating Contacts");
-        System.out.println("Enter First Name");
-        setFirstname(sc.next());
-        System.out.println("Enter last Name");
-        setLastname(sc.next());
-        System.out.println("Enter Address");
-        setAddress(sc.next());
-        System.out.println("Enter State");
-        setState(sc.next());
-        System.out.println("Enter Zip");
-        setZip(sc.nextInt());
-        System.out.println("Enter Phone no");
-        setPhonenumber(sc.nextLong());
-        System.out.println("Enter E-mail");
-        setEmail(sc.next());
+     public void setCity(String city) {
+          this.city = city;
+     }
 
+     public String getCity() {
+          return city;
+     }
 
-        System.out.println("Check Added Contact Details");
-        System.out.println("\n First Name "+getFirstname());
-        System.out.println("\n Last Name "+getLastname());
-        System.out.println("\n Address "+getAddress());
-        System.out.println("\n State "+getState());
-        System.out.println("\n Zip "+getZip());
-        System.out.println("\n Phone Number  "+getPhonenumber());
-        System.out.println("\nE-mail id "+getEmail());
-    }
+     public void setState(String state) {
+          this.state = state;
+     }
 
+     public String getState() {
+          return state;
+     }
 
+     public void setPhoneNo(long phoneNo) {
+          this.phoneNo = phoneNo;
+     }
 
+     public long getPhoneNo() {
+          return phoneNo;
+     }
+
+     public void setZip(int zip) {
+          this.zip = zip;
+     }
+
+     public int getZip() {
+          return zip;
+     }
 }
