@@ -6,7 +6,7 @@ public class AddressBook {
     Scanner sc = new Scanner(System.in);
 
     Contacts obj = new Contacts();
-    public void Contacts() {
+    public void contacts() {
         System.out.println("Enter Details for Creating Contacts");
         System.out.println("Enter First Name");
         obj.setFirstname(sc.next());
