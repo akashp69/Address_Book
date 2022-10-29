@@ -6,6 +6,6 @@ public class AddressBookMain {
         System.out.println("Welcome To AddressBook");
         AddressBook obj1 =new AddressBook();
 
-        obj1.Contacts();
+        obj1.contacts();
     }
 }
